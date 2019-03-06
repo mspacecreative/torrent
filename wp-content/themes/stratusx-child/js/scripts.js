@@ -19,9 +19,9 @@ function wrapHeight() {
 	} else if ($body.hasClass('blog')) {
 		$body.addClass('wrapheight');
 	}
-	
-	$('.wrapheight .wrap').css('padding-top', $('.headhesive--clone').height());
 }
+
+$('.wrapheight .wrap').css('padding-top', $('.headhesive--clone').height());
 
 $(document).ready(function() {
 	wrapHeight();
