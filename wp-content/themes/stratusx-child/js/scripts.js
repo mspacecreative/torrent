@@ -21,7 +21,9 @@ function wrapHeight() {
 	}
 }
 
-$('.wrapheight .wrap').css('padding-top', $('.headhesive--clone').height());
+var $header = $('.headhesive--clone');
+var $wrap = $('.wrapheight .wrap');
+$wrap.css('padding-top', $wrap.siblings($header).height());
 
 $(document).ready(function() {
 	wrapHeight();
