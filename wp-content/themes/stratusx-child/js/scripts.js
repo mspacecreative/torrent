@@ -24,7 +24,7 @@ function wrapHeight() {
 $(document).ready(function() {
 	wrapHeight();
 	
-	var $header = $('.headhesive--clone');
+	var $header = $('.banner.headhesive--clone');
 	var $wrap = $('.wrapheight .wrap');
 	$wrap.css('padding-top', $wrap.siblings($header).height());
 });
