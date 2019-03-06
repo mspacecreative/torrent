@@ -13,7 +13,7 @@ if ($link.hasClass('prev')) {
 }
 
 function wrapHeight() {
-	$('.single .wrap').css('padding-top', $('header').height());
+	$('.single .wrap, .blog .wrap').css('padding-top', $('header').height());
 }
 
 $(document).ready(function() {
