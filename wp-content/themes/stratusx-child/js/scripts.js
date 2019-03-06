@@ -13,13 +13,16 @@ if ($link.hasClass('prev')) {
 }
 
 function wrapHeight() {
-	$('.single .wrap, .blog .wrap').css('padding-top', $('.banner.headhesive--clone').height());
+	var $body = $('body');
+	if ($body.hasClass('single')) {
+		$body.addClass('wrapheight');
+	} else if ($body.hasClass('blog')) {
+		$body.addClass('wrapheight');
+	}
+	
+	$('.wrapheight .wrap').css('padding-top', $('.headhesive--clone').height());
 }
 
 $(document).ready(function() {
-	wrapHeight();
-});
-
-$(window).resize(function() {
 	wrapHeight();
 });
