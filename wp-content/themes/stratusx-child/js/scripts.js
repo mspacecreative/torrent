@@ -11,3 +11,15 @@ if ($link.hasClass('prev')) {
 } else if ($link.hasClass('next')) {
 	$link.css('float', 'right');
 }
+
+function wrapHeight() {
+	$('.single .wrap').css('padding-top', $('header').height());
+}
+
+$(document).ready(function() {
+	wrapHeight();
+});
+
+$(window).resize(function() {
+	wrapHeight();
+});
