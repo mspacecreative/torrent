@@ -26,5 +26,5 @@ $(document).ready(function() {
 	
 	var $header = $('.banner.headhesive--clone');
 	var $wrap = $('.wrapheight .wrap');
-	$wrap.css('padding-top', $wrap.siblings($header).height());
+	$wrap.css('padding-top', $wrap.siblings($header).outerHeight());
 });
