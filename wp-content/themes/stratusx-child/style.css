@@ -13,3 +13,55 @@ Domain Path:    /languages/
 /* = Theme customization starts here
 -------------------------------------------------------------- */
 
+.post-meta {
+	line-height: 32px;
+}
+.blog .sharethis-inline-share-buttons {
+	display: none!important;
+}
+
+body.single .wp-post-image {
+	width: 100%;
+}
+
+ul.post-pagination {
+	list-style: none;
+	padding: 0;
+}
+
+.post-pagination li:nth-child(1) {
+	float: left;
+}
+
+.post-pagination li.prev:before {
+	content: '\f100';
+	font-family: fontAwesome;
+	margin-right: 5px;
+}
+
+.post-pagination li.next:after {
+	content: '\f101';
+	font-family: fontAwesome;
+	margin-left: 5px;
+}
+
+.post-pagination li:nth-child(2) {
+	float: right;
+}
+
+@media (min-width: 651px) {
+	.post-meta {
+		float: left;
+	}
+	
+	.sharethis-inline-share-buttons {
+		float: right;
+	}
+}
+
+@media (max-width: 650px) {
+	body #st-1 {
+		text-align: left;
+		margin-top: 15px;
+	}
+}

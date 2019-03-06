@@ -6863,3 +6863,9 @@ wp-settings.php
 wp-signup.php
 wp-trackback.php
 xmlrpc.php
+wp-content/plugins/classic-editor/classic-editor.php
+wp-content/plugins/classic-editor/js/block-editor-plugin.js
+wp-content/plugins/classic-editor/LICENSE.md
+wp-content/plugins/classic-editor/readme.txt
+wp-content/plugins/wp-jquery-plus/readme.txt
+wp-content/plugins/wp-jquery-plus/wp-jquery-plus.php
