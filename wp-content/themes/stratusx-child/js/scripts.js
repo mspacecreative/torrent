@@ -21,10 +21,20 @@ function wrapHeight() {
 	}
 }
 
-$(document).ready(function() {
-	wrapHeight();
-	
+function addWrapHeight() {
 	var $header = $('.banner.headhesive--stick');
 	var $wrap = $('.wrapheight .wrap');
 	$wrap.css('padding-top', $wrap.siblings($header).outerHeight());
+}
+
+$(document).ready(function() {
+	wrapHeight();
+});
+
+$(window).load(function() {
+	addWrapHeight();
+});
+
+$(window).resize(function() {
+	addWrapHeight();
 });
