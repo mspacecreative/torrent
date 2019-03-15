@@ -64,9 +64,9 @@ ul.post-pagination {
 	padding: 10px;
 }
 
-.visualizer-front rect {
+/*.visualizer-front rect {
 	fill: transparent!important;
-}
+}*/
 
 .page-template-content-performance .content-editor {
 	border: 1px solid #c9c9c9;
