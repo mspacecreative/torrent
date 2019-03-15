@@ -70,8 +70,8 @@ ul.post-pagination {
 	border-bottom-width: 5px;
 }
 
-.tradingview-widget-copyright {
-	display: none;
+.tradingview-widget-container .tradingview-widget-copyright {
+	display: none!important;
 }
 
 .quarterly-performance td {
