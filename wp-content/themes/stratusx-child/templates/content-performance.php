@@ -38,7 +38,7 @@
 		$height = $image['sizes'][ $size . '-height' ]; ?>
 		<div class="comparison-image">
 			<a href="<?php echo $url; ?>" title="<?php echo $title; ?>" target="_blank">
-				<img src="<?php echo $full; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
+				<img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
 			</a>
 		</div>
 		<?php endif; ?>
