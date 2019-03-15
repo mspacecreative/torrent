@@ -12,8 +12,8 @@
 		<table>
 		 	<tr>
 		 		<?php while ( have_rows('quarter_ended') ) : the_row(); ?>
-				<td><?php the_field('quarter_end_date'); ?></td>
-				<td><?php the_field('nav_per_share'); ?></td>
+				<td><?php the_sub_field('quarter_end_date'); ?></td>
+				<td><?php the_sub_field('nav_per_share'); ?></td>
 				<?php endwhile; ?>
 			</tr>
 		</table>
