@@ -31,7 +31,7 @@
 		$size = 'full';
 		if( $image ) : ?>
 		<div class="comparison-image">
-			<a href="<?php echo wp_get_attachment_image_url(); ?>" target="_blank">
+			<a href="<?php echo wp_get_attachment_url(); ?>" target="_blank">
 				<?php echo wp_get_attachment_image( $image, $size ); ?>
 			</a>
 		</div>
