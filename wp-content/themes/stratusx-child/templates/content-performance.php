@@ -2,12 +2,10 @@
 /* Template Name: Quarterly Performance */
 ?>
 <section class="content-editor">
-<?php
-
-// check if the repeater field has rows of data
-if( have_rows('quarter_ended') ): ?>
 
 <table>
+
+	<?php if( have_rows('quarter_ended') ): ?>
 
  	<?php while ( have_rows('quarter_ended') ) : the_row(); ?>
  		
@@ -16,16 +14,13 @@ if( have_rows('quarter_ended') ): ?>
 			<td><?php the_field('nav_per_share'); ?></td>
 		</tr>
 
-   <?php endwhile; ?>
+   	<?php endwhile;
+  	else :
+   	// no rows found
+   	endif; ?>
    
 </table>
 
-<?php else :
-
-    // no rows found
-
-endif;
-?>
 <?php while (have_posts()) : the_post(); ?>
     <?php the_content(); ?>
     <?php if(!is_front_page()){
