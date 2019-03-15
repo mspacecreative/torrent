@@ -9,7 +9,7 @@
 	<section class="content-editor">
 	
 	<?php if( have_rows('quarter_ended') ): ?>
-		<table>
+		<table class="quarterly-performance">
 		 	<?php while ( have_rows('quarter_ended') ) : the_row(); ?>
 		 	<tr>
 				<td><?php the_sub_field('quarter_end_date'); ?></td>
