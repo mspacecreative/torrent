@@ -32,7 +32,7 @@
 		$url = $image['url'];
 		$alt = $image['alt'];
 		$title = $image['title'];
-		$size = 'large';
+		$size = 'full';
 		$thumb = $image['sizes'][ $size ];
 		$width = $image['sizes'][ $size . '-width' ];
 		$height = $image['sizes'][ $size . '-height' ]; ?>
