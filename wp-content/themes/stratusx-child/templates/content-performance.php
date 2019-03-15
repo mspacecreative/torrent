@@ -25,6 +25,13 @@
 	
 	<?php while (have_posts()) : the_post(); ?>
 	    <?php the_content(); ?>
+		<?php
+		$image = get_field('tsx_300_index_comparison');
+		$size = 'full';
+		if( $image ) {
+			echo wp_get_attachment_image( $image, $size );
+		}
+		?>
 	    <?php if(!is_front_page()){
 	        wp_link_pages(array('before' => '<nav class="pagination th-pagination">', 'after' => '</nav>'));
 	    }?>
