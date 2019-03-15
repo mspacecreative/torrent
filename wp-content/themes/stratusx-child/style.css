@@ -80,13 +80,14 @@ ul.post-pagination {
 
 .page-template-content-performance .content-editor {
 	border: 1px solid #c9c9c9;
-	margin: 50px auto;
+	margin: 0 auto 50px;
 	padding: 40px 0;
 	max-width: 1140px;
 }
 
 .page-template-content-performance .entry-title {
 	text-align: center;
+	border-bottom: none;
 }
 
 .quarterly-performance th {
