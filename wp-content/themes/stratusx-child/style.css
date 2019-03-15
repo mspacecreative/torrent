@@ -56,6 +56,11 @@ ul.post-pagination {
 	text-align: center;
 }
 
+.comparison-image {
+	width: 100%;
+	padding: 0 10%;
+}
+
 .quarterly-performance tr {
 	border-bottom: 1px solid #e9e9e9;
 }
