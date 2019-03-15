@@ -28,12 +28,15 @@
 		<h3 style="text-align: center;margin: 25px 0;"><?php echo esc_html_e('Plotted Against the TSX 300 Index (1 year)'); ?></h3>
 		<?php
 		$image = get_field('tsx_300_index_comparison');
+		if( !empty($image) ) :
+		$url = $image['url'];
 		$size = 'full';
-		if( $image ) :
-		$url = $image['url']; ?>
+		$full = $image['sizes'][ $size ];
+		$width = $image['sizes'][ $size . '-width' ];
+		$height = $image['sizes'][ $size . '-height' ]; ?>
 		<div class="comparison-image">
 			<a href="<?php echo $url; ?>" target="_blank">
-				<?php echo wp_get_attachment_image( $image, $size ); ?>
+				<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
 			</a>
 		</div>
 		<?php endif; ?>
