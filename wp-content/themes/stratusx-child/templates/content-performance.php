@@ -30,12 +30,14 @@
 		$image = get_field('tsx_300_index_comparison');
 		if( !empty($image) ) :
 		$url = $image['url'];
+		$alt = $image['alt'];
+		$title = $image['title'];
 		$size = 'full';
 		$full = $image['sizes'][ $size ];
 		$width = $image['sizes'][ $size . '-width' ];
 		$height = $image['sizes'][ $size . '-height' ]; ?>
 		<div class="comparison-image">
-			<a href="<?php echo $url; ?>" target="_blank">
+			<a href="<?php echo $url; ?>" title="<?php echo $title; ?>" target="_blank">
 				<img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
 			</a>
 		</div>
