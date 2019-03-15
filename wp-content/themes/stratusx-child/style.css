@@ -53,14 +53,22 @@ ul.post-pagination {
 	width: 100%;
 	max-width: 600px;
 	margin: auto;
+	text-align: center;
 }
 
 .quarterly-performance tr {
 	border-bottom: 1px solid #e9e9e9;
 }
 
-.quarterly-performance td, .quarterly-performance th {
+.quarterly-performance td {
 	padding: 10px;
+}
+
+.quarterly-performance th {
+	padding: 10px;
+	background: #003e7e;
+	color: #fff;
+	text-align: center;
 }
 
 .quarterly-performance td:nth-child(odd) {
