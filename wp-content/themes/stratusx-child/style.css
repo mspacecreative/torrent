@@ -85,7 +85,7 @@ ul.post-pagination {
 	max-width: 1140px;
 }
 
-.page-template-content-performance .entry-title {
+.page-template-content-performance .inner-container .entry-title {
 	text-align: center;
 	border-bottom: none;
 }
