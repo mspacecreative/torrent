@@ -70,6 +70,10 @@ ul.post-pagination {
 	border-bottom-width: 5px;
 }
 
+.tradingview-widget-copyright {
+	display: none;
+}
+
 .quarterly-performance td {
 	padding: 5px 10px;
 }
