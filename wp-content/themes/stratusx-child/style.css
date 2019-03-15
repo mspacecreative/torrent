@@ -75,6 +75,10 @@ ul.post-pagination {
 	max-width: 1140px;
 }
 
+.page-template-content-performance .entry-title {
+	text-align: center;
+}
+
 .quarterly-performance th {
 	padding: 10px;
 	background: #003e7e;
