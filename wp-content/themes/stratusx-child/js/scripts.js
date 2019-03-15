@@ -18,6 +18,8 @@ function wrapHeight() {
 		$body.addClass('wrapheight');
 	} else if ($body.hasClass('blog')) {
 		$body.addClass('wrapheight');
+	}else if ($body.hasClass('page-template-content-performance')) {
+		$body.addClass('wrapheight');
 	}
 }
 
