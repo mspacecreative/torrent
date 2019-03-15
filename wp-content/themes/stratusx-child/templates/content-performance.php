@@ -3,23 +3,16 @@
 ?>
 <section class="content-editor">
 
-<table>
-
-	<?php if( have_rows('quarter_ended') ): ?>
-
- 	<?php while ( have_rows('quarter_ended') ) : the_row(); ?>
- 		
- 		<tr>
+<?php if( have_rows('quarter_ended') ): ?>
+	<table>
+	 	<tr>
+	 		<?php while ( have_rows('quarter_ended') ) : the_row(); ?>
 			<td><?php the_field('quarter_end_date'); ?></td>
 			<td><?php the_field('nav_per_share'); ?></td>
+			<?php endwhile; ?>
 		</tr>
-
-   	<?php endwhile;
-  	else :
-   	// no rows found
-   	endif; ?>
-   
-</table>
+	</table>
+<?php endif; ?>
 
 <?php while (have_posts()) : the_post(); ?>
     <?php the_content(); ?>
