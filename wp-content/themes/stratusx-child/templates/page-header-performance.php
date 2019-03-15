@@ -21,9 +21,11 @@ if($th_hide_title == 'off' || $th_hide_title !== 'on'){
     if(isset($post_type) && $post_type == 'product'){
         // Do nothing
     }else{ ?>
-        <h1 class="entry-title"><?php echo wp_kses_post(roots_title())  ?><span style="font-size: 20px;font-weight: bold;display: inline-block;"><?php echo esc_html_e('Ending: '); ?></span><span style="font-size: 20px;margin-top: 25px;"><?php if ( get_field('current_quarter' ) ): 
+        <h1 class="entry-title"><?php echo wp_kses_post(roots_title())  ?>
+			<span style="font-size: 20px;display: block;margin-top: 25px;"><span style="font-weight: bold;"><?php echo esc_html_e('Ending: '); ?></span><?php if ( get_field('current_quarter' ) ): 
         	the_field('current_quarter');
-        endif; ?></span></h1>
+        endif; ?></span>
+		</h1>
     <?php
     }
 
