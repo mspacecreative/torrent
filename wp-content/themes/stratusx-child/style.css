@@ -71,7 +71,7 @@ ul.post-pagination {
 }
 
 .quarterly-performance td {
-	padding: 10px;
+	padding: 5px 10px;
 }
 
 /*.visualizer-front rect {
@@ -91,7 +91,7 @@ ul.post-pagination {
 }
 
 .quarterly-performance th {
-	padding: 10px;
+	padding: 5px 10px;
 	background: #003e7e;
 	color: #fff;
 	text-align: center;
