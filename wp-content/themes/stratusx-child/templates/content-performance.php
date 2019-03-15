@@ -10,6 +10,10 @@
 	
 	<?php if( have_rows('quarter_ended') ): ?>
 		<table class="quarterly-performance">
+		 	<tr>
+		 		<th>Quarter Ended</th>
+		 		<th>NAV Per Share</th>
+		 	</tr>
 		 	<?php while ( have_rows('quarter_ended') ) : the_row(); ?>
 		 	<tr>
 				<td><?php the_sub_field('quarter_end_date'); ?></td>
