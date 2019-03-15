@@ -58,6 +58,7 @@ ul.post-pagination {
 
 .comparison-image img {
 	width: 100%;
+	cursor: zoom-in;
 }
 
 .quarterly-performance tr {

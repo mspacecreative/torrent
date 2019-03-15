@@ -31,7 +31,9 @@
 		$size = 'full';
 		if( $image ) : ?>
 		<div class="comparison-image">
-			<?php echo wp_get_attachment_image( $image, $size ); ?>
+			<a href="<?php echo the_permalink(); ?>" target="_blank">
+				<?php echo wp_get_attachment_image( $image, $size ); ?>
+			</a>
 		</div>
 		<?php endif; ?>
 	    <?php if(!is_front_page()){
