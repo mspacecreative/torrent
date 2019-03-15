@@ -68,6 +68,12 @@ ul.post-pagination {
 	fill: transparent!important;
 }
 
+.page-template-content-performance .content-editor {
+	border: 1px solid #c9c9c9;
+	margin: 50px auto;
+	padding: 40px 0;
+}
+
 .quarterly-performance th {
 	padding: 10px;
 	background: #003e7e;
