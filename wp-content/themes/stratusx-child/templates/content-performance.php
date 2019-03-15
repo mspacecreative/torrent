@@ -25,13 +25,15 @@
 	
 	<?php while (have_posts()) : the_post(); ?>
 	    <?php the_content(); ?>
+		<h2><?php echo esc_html_e('Plotted Against the TSX 300 Index'); ?></h2>
 		<?php
 		$image = get_field('tsx_300_index_comparison');
 		$size = 'full';
-		if( $image ) {
-			echo wp_get_attachment_image( $image, $size );
-		}
-		?>
+		if( $image ) : ?>
+		<div class="comparison-image">
+			<?php echo wp_get_attachment_image( $image, $size ); ?>
+		</div>
+		<?php endif; ?>
 	    <?php if(!is_front_page()){
 	        wp_link_pages(array('before' => '<nav class="pagination th-pagination">', 'after' => '</nav>'));
 	    }?>
