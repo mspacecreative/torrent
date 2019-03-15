@@ -33,12 +33,12 @@
 		$alt = $image['alt'];
 		$title = $image['title'];
 		$size = 'full';
-		$full = $image['sizes'][ $size ];
+		$thumb = $image['sizes'][ $size ];
 		$width = $image['sizes'][ $size . '-width' ];
 		$height = $image['sizes'][ $size . '-height' ]; ?>
 		<div class="comparison-image">
 			<a href="<?php echo $url; ?>" title="<?php echo $title; ?>" target="_blank">
-				<img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
+				<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
 			</a>
 		</div>
 		<?php endif; ?>
