@@ -29,9 +29,10 @@
 		<?php
 		$image = get_field('tsx_300_index_comparison');
 		$size = 'full';
+		$url = $image['url'];
 		if( $image ) : ?>
 		<div class="comparison-image">
-			<a href="<?php echo wp_get_attachment_image_src( $attachment_id ); ?>" target="_blank">
+			<a href="<?php echo $url; ?>" target="_blank">
 				<?php echo wp_get_attachment_image( $image, $size ); ?>
 			</a>
 		</div>
