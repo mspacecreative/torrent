@@ -5,9 +5,6 @@
 <?php include( locate_template( 'templates/page-layout.php' ) ); ?>
 <div class="inner-container">
 	<?php include( locate_template( 'templates/page-header-performance.php' ) ); // Page Header Template ?>
-	<?php if ( get_field('current_quarter' ) ): 
-		the_field('current_quarter');
-	endif; ?>
 
 	<section class="content-editor">
 	
