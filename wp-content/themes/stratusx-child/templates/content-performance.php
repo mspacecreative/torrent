@@ -25,7 +25,7 @@
 	
 	<?php while (have_posts()) : the_post(); ?>
 	    <?php the_content(); ?>
-		<h2><?php echo esc_html_e('Plotted Against the TSX 300 Index'); ?></h2>
+		<h3 style="text-align: center;"><?php echo esc_html_e('Plotted Against the TSX 300 Index (1 year)'); ?></h3>
 		<?php
 		$image = get_field('tsx_300_index_comparison');
 		$size = 'full';

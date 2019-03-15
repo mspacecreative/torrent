@@ -65,6 +65,11 @@ ul.post-pagination {
 	border-bottom: 1px solid #e9e9e9;
 }
 
+.quarterly-performance tr:last-of-type {
+	border-bottom-color: #003E7D;
+	border-bottom-width: 5px;
+}
+
 .quarterly-performance td {
 	padding: 10px;
 }
