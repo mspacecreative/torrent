@@ -175,6 +175,7 @@ ul.post-pagination {
 	padding: 5px 10px;
 	border-radius: 4px 4px 0 0;
 	visibility: visible;
+	border: 1px solid #fff;
 }
 
 .subscribe_button li {
