@@ -21,5 +21,21 @@ function styles_scripts() {
 	wp_enqueue_script('scripts');
 }
 
+// REGISTER SIDEBAR
+function subscribeSidebar() {
+    register_sidebar( array(
+    'name' => __( 'Subscribe Sidebar', 'torrent' ),
+    'id' => 'subscribe-sidebar',
+    'description'   => __( 'Subscribe button for blog', 'torrent' ),
+    'before_widget' => '<li id="%1$s" class="widget %2$s">',
+	'after_widget'  => '</li>',
+	'before_title'  => '<h2 class="widgettitle">',
+	'after_title'   => '</h2>',
+    ) );
+}
+
 // ENQUEUE STYLES AND SCRIPTS
 add_action('init', 'styles_scripts');
+
+// ENQUEUE SIDEBAR
+add_action( 'widgets_init', 'subscribeSidebar' );
