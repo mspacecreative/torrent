@@ -13,6 +13,8 @@
 		 	<tr>
 		 		<th>Quarter Ended</th>
 		 		<th>NAV Per Share</th>
+		 		<th>Quarterly % change</th>
+		 		<th>Cumulative % change</th>
 		 	</tr>
 		 	<?php while ( have_rows('quarter_ended') ) : the_row(); ?>
 		 	<tr>
