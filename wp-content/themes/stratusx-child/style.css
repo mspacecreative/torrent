@@ -105,6 +105,10 @@ ul.post-pagination {
 	border-right: 1px solid #e9e9e9;
 }
 
+.quarterly-performance td:last-of-type {
+	border-right: none;
+}
+
 @media (min-width: 651px) {
 	.post-meta {
 		float: left;
