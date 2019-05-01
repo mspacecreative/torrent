@@ -3,28 +3,12 @@
 	$(function () {
 		
 		'use strict';
-
-		$('.subscribe_tab').click(function() {
-			$(this).parent().toggleClass('reveal');
-			
-			if ( $(this).parent().hasClass('reveal') ) {
-				$(this).text('CLOSE');
-			} else {
-				$(this).text('SUBSCRIBE');
-			}
-		});
 		
 		$('.post-pagination li').each(function() {
 		    var $this = $(this);
 		    if($this.html().replace(/\s|&nbsp;/g, '').length == 0)
 		        $this.remove();
 		});
-		
-		function formSubmit() {
-			$('#subscribe-blog-blog_subscription-2').submit(function() {
-				$('body').addClass('success');
-			});
-		}
 		
 		//$('.post-pagination li:only-child').css('float', 'right');
 		var $link = $('.post-pagination li:only-child');
@@ -53,14 +37,10 @@
 		
 		$(document).ready(function() {
 			wrapHeight();
-			formSubmit();
 		});
-		
-		$('.success').parent().parent().addClass('reveal');
 		
 		$(window).load(function() {
 			addWrapHeight();
-			formSubmit();
 		});
 		
 		$(window).resize(function() {
