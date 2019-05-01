@@ -8,9 +8,9 @@
 			$(this).parent().toggleClass('reveal');
 			
 			if ( $(this).parent().hasClass('reveal') ) {
-				$(this).text('CLOSE').animate('slow');
+				$(this).html('CLOSE').animate('slow');
 			} else {
-				$(this).text('SUBSCRIBE').animate('slow');
+				$(this).html('SUBSCRIBE').animate('slow');
 			}
 		});
 		
