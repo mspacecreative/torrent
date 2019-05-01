@@ -133,7 +133,7 @@ ul.post-pagination {
 	}
 }
 
-@media (min-width: 981px) {
+@media (min-width: 650px) {
 	.visualizer-front-1017 {
 		left: -40px;
 		position: relative;
