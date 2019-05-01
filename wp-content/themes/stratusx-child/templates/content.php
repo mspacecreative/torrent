@@ -1,3 +1,9 @@
+<div class="subscribe_button">
+	<?php if ( is_active_sidebar( 'subscribe-sidebar' ) ) :
+		dynamic_sidebar( 'subscribe-sidebar' );
+	endif; ?>
+</div>
+
 <?php
 global $masonry, $masonry_template_key,$image_size,$more,$automatic_post_excerpts;
 

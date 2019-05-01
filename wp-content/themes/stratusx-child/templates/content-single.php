@@ -1,3 +1,9 @@
+<div class="subscribe_button">
+	<?php if ( is_active_sidebar( 'subscribe-sidebar' ) ) :
+		dynamic_sidebar( 'subscribe-sidebar' );
+	endif; ?>
+</div>
+
 <?php while (have_posts()) : the_post(); ?>
 <article <?php post_class(); ?>>
     <header>
