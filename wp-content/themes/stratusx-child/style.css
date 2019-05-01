@@ -162,6 +162,10 @@ ul.post-pagination {
 	transition: all 0.5s ease-in-out;
 }
 
+.subscribe_button.reveal .subscribe_tab {
+	left: -54px;
+}
+
 .success p {
 	color: #fff;
 }
