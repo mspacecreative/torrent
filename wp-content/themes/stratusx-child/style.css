@@ -139,3 +139,52 @@ ul.post-pagination {
 		position: relative;
 	}
 }
+
+.subscribe_button {
+	position: fixed;
+	right: 0;
+	width: 300px;
+	top: 50%;
+	transform: translate(300px, -50%);
+	padding: 20px;
+	background: #003e7e;
+	z-index: 99;
+	visibility: hidden;
+}
+
+.subscribe_button.reveal {
+	position: fixed;
+	right: 0;
+	width: 300px;
+	top: 50%;
+	transform: translate(0, -50%);
+	padding: 20px;
+	background: #003e7e;
+	z-index: 99;
+	visibility: visible;
+}
+
+.subscribe_tab {
+	color: #fff;
+	transform: rotate(-90deg);
+	position: absolute;
+	left: -70px;
+	top: 50%;
+	margin-top: -23px;
+	background-color: #003e7e;
+	padding: 5px 10px;
+	border-radius: 4px 4px 0 0;
+}
+
+.subscribe_button li {
+	list-style: none;
+}
+
+.subscribe_button .widgettitle {
+	color: #fff;
+	margin: 0 0 15px;
+}
+
+.subscribe_button #subscribe-text p {
+	color: #fff;
+}
