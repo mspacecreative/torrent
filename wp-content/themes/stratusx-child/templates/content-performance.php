@@ -9,6 +9,7 @@
 	<section class="content-editor">
 	
 	<?php if( have_rows('quarter_ended') ): ?>
+	<div class="mobile-overflow">
 		<table class="quarterly-performance">
 		 	<tr>
 		 		<th>Quarter Ended</th>
@@ -25,6 +26,7 @@
 			</tr>
 			<?php endwhile; ?>
 		</table>
+	</div>
 	<?php endif; ?>
 	
 	<?php while (have_posts()) : the_post(); ?>
