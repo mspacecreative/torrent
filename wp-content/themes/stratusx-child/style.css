@@ -101,7 +101,7 @@ ul.post-pagination {
 	text-align: center;
 }
 
-.quarterly-performance td:nth-child(odd) {
+.quarterly-performance td {
 	border-right: 1px solid #e9e9e9;
 }
 
