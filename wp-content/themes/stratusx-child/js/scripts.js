@@ -14,6 +14,12 @@
 		        $this.remove();
 		});
 		
+		function formSubmit() {
+			$('#subscribe-blog-blog_subscription-2').submit(function() {
+				$('body').addClass('success');
+			}
+		}
+		
 		//$('.post-pagination li:only-child').css('float', 'right');
 		var $link = $('.post-pagination li:only-child');
 		if ($link.hasClass('prev')) {
@@ -45,6 +51,7 @@
 		
 		$(window).load(function() {
 			addWrapHeight();
+			formSubmit();
 			
 			if ( $('#blog_subscription-2').children('div').hasClass('success') ) {
 				$(this).parent().parent().addClass('reveal');
