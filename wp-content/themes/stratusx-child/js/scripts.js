@@ -6,6 +6,12 @@
 
 		$('.subscribe_tab').click(function() {
 			$(this).parent().toggleClass('reveal');
+			
+			if ( $('.subscribe_button').hasClass('reveal') ) {
+				$(this).children('.subscribe_tab').text('CLOSE');
+			} else {
+				$(this).children('.subscribe_tab').text('SUBSCRIBE');
+			}
 		});
 		
 		$('.post-pagination li').each(function() {
@@ -49,12 +55,6 @@
 			wrapHeight();
 			formSubmit();
 		});
-		
-		if ( $('.subscribe_button').hasClass('reveal') ) {
-			$(this).children('.subscribe_tab').text('CLOSE');
-		} else {
-			$(this).children('.subscribe_tab').text('SUBSCRIBE');
-		}
 		
 		$('.success').parent().parent().addClass('reveal');
 		
