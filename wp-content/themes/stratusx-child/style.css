@@ -131,3 +131,10 @@ ul.post-pagination {
 		overflow: scroll;
 	}
 }
+
+@media (min-width: 981px) {
+	.visualizer-front-1017 {
+		left: -40px;
+		position: relative;
+	}
+}
