@@ -7,10 +7,10 @@
 		$('.subscribe_tab').click(function() {
 			$(this).parent().toggleClass('reveal');
 			
-			if ( $('.subscribe_button').hasClass('reveal') ) {
-				$(this).children('.subscribe_tab').text('CLOSE');
+			if ( $(this).parent().hasClass('reveal') ) {
+				$(this).text('CLOSE');
 			} else {
-				$(this).children('.subscribe_tab').text('SUBSCRIBE');
+				$(this).text('SUBSCRIBE');
 			}
 		});
 		
