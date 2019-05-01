@@ -99,11 +99,5 @@ if ( function_exists( 'get_theme_mod' ) ) {
         </div>
     </div>
 </footer>
-
-<div class="subscribe_button">
-	<?php if ( is_active_sidebar( 'subscribe-sidebar' ) ) :
-		dynamic_sidebar( 'subscribe-sidebar' );
-	endif; ?>
-</div>
     
 <?php wp_footer(); ?>
