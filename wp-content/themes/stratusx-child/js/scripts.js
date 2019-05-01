@@ -51,9 +51,9 @@
 		});
 		
 		if ( $('.subscribe_button').hasClass('reveal') ) {
-			$('.subscribe_tab').text('CLOSE');
+			$(this).children('.subscribe_tab').text('CLOSE');
 		} else {
-			$('.subscribe_tab').text('SUBSCRIBE');
+			$(this).children('.subscribe_tab').text('SUBSCRIBE');
 		}
 		
 		$('.success').parent().parent().addClass('reveal');
