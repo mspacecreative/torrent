@@ -150,11 +150,13 @@ ul.post-pagination {
 	background: #003e7e;
 	z-index: 99;
 	visibility: hidden;
+	transition: all 0.5 ease-in-out;
 }
 
 .subscribe_button.reveal {
 	transform: translate(0, -50%);
 	visibility: visible;
+	transition: all 0.5 ease-in-out;
 }
 
 .subscribe_tab {
@@ -167,6 +169,7 @@ ul.post-pagination {
 	background-color: #003e7e;
 	padding: 5px 10px;
 	border-radius: 4px 4px 0 0;
+	visibility: visible;
 }
 
 .subscribe_button li {
