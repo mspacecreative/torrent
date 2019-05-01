@@ -17,7 +17,7 @@
 		function formSubmit() {
 			$('#subscribe-blog-blog_subscription-2').submit(function() {
 				$('body').addClass('success');
-			}
+			});
 		}
 		
 		//$('.post-pagination li:only-child').css('float', 'right');
