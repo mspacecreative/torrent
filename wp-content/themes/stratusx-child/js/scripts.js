@@ -50,6 +50,12 @@
 			formSubmit();
 		});
 		
+		if ( $('.subscribe_button').hasClass('reveal') ) {
+			$('.subscribe_tab').html('CLOSE');
+		} else {
+			$('.subscribe_tab').html('SUBSCRIBE');
+		}
+		
 		$('.success').parent().parent().addClass('reveal');
 		
 		$(window).load(function() {
