@@ -160,6 +160,10 @@ ul.post-pagination {
 	transition: all 0.5s ease-in-out;
 }
 
+.success p {
+	color: #fff;
+}
+
 .subscribe_tab {
 	color: #fff;
 	transform: rotate(-90deg);
