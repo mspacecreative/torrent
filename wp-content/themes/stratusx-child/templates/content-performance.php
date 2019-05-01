@@ -20,6 +20,8 @@
 		 	<tr>
 				<td><?php the_sub_field('quarter_end_date'); ?></td>
 				<td><?php the_sub_field('nav_per_share'); ?></td>
+				<td><?php the_sub_field('quarterly_per_change'); ?></td>
+				<td><?php the_sub_field('cumulative_per_change'); ?></td>
 			</tr>
 			<?php endwhile; ?>
 		</table>
