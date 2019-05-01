@@ -47,15 +47,15 @@
 		
 		$(document).ready(function() {
 			wrapHeight();
+			
+			if ( $('#blog_subscription-2').children().hasClass('success') ) {
+				$(this).parent().parent().addClass('reveal');
+			}
 		});
 		
 		$(window).load(function() {
 			addWrapHeight();
 			formSubmit();
-			
-			if ( $('#blog_subscription-2').children('div').hasClass('success') ) {
-				$(this).parent().parent().addClass('reveal');
-			}
 		});
 		
 		$(window).resize(function() {
