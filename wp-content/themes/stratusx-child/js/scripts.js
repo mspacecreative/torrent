@@ -46,7 +46,7 @@
 		$(window).load(function() {
 			addWrapHeight();
 			
-			if ( $('.subscribe_tab').siblings('li').children('div').hasClass('success') ) {
+			if ( $('#blog_subscription-2').children('div').hasClass('success') ) {
 				$(this).parent().parent().addClass('reveal');
 			}
 		});
