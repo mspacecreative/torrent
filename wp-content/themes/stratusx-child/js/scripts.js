@@ -8,6 +8,10 @@
 			$(this).parent().toggleClass('reveal');
 		});
 		
+		if ( $('.subscribe_tab').siblings().children('div').hasClass('success') ) {
+			$(this).parent().parent().addClass('reveal');
+		}
+		
 		$('.post-pagination li').each(function() {
 		    var $this = $(this);
 		    if($this.html().replace(/\s|&nbsp;/g, '').length == 0)
